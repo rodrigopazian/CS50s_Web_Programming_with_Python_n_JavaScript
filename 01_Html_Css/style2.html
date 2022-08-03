@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Style 2</title>
+        <style>
+            h1 {
+                color: black;      
+            }
+            #h0001, #h0002 {
+                color: green;
+            }
+            .c01 {
+                color: blue; 
+            }
+        </style>
+    </head>
+    <body>
+        <h1>NO SPECIFICITY</h1>
+        <h1 style="color: red;">INLINECODE SPECIFICITY</h1>
+        <h1 id="h0001">ID SPECIFICITY</h1>
+        <h1 class="c01">CLASS SPECIFICITY</h1>
+        <h1>TYPE SPECIFICITY</h1>
+        
+        <h1>NO SPECIFICITY</h1>
+
+        <h1>TYPE SPECIFICITY</h1>
+        <h1 class="c01">CLASS SPECIFICITY</h1>
+        <h1 id="h0002">ID SPECIFICITY</h1>
+        <h1 style="color: red;">INLINECODE SPECIFICITY</h1>
+        <h1>NO SPECIFICITY</h1>
+    </body>
+</html>
