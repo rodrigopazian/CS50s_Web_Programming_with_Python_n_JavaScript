@@ -1,7 +1,7 @@
-coordenadas = {"x" : 10.0, "y" : 20.0, "z" : 30.0}
+coordinates = {"x" : 10.0, "y" : 20.0, "z" : 30.0}
 
-print(coordenadas)
+print(coordinates)
 
-print(coordenadas["x"])
-print(coordenadas["y"])
-print(coordenadas["z"])
+print(coordinates["x"])
+print(coordinates["y"])
+print(coordinates["z"])
