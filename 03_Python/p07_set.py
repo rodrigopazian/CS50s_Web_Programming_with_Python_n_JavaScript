@@ -1,1 +1,8 @@
-set(0, 1, 2, 3, 4, 5, 6, 7)
+setn = set()
+
+setn.add(1)
+setn.add(2)
+setn.add(3)
+setn.add(4)
+
+print(setn)
