@@ -15,3 +15,7 @@ s.add(3)
 s.add(2)
 
 print(s)
+
+s.remove(2)
+
+print(s)
