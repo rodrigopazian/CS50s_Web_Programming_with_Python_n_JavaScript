@@ -5,7 +5,7 @@ class Flight():
         #create an empty list of passengers for the object itself
         self.passengers = []
 
-    #Function that adds a passenger to self.passengers list
+    #Function that adds a passenger to self.passengers list often called a method
     def addPassenger(self, name):
         #add passenger to self.passengers only if the flight still has capacity
         #if capacity is equal 0 do not add a passenger and return False
@@ -19,7 +19,7 @@ class Flight():
     def calc_capacity(self):
         return self.capacity - len(self.passengers)
 
-#Create flight number 1 flight1 with capacity of 4 passengers 
+#Create flight number 1 flight1 with capacity of 3 passengers 
 flight1 = Flight(3)
 
 print(flight1.capacity)
