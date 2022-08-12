@@ -26,8 +26,7 @@ print(peoplelist)
 
 #Simplifying the code using the lambda Function in Python that allows for single line functions to go inside
 # argument and/or method fields
-# lambda substitutes the name of the function
-nameValues
+# lambda substitutes the name of the function nameValues
 peoplelist.sort(key=lambda person: person["name"] )
 print("Sorted by house with lambda function: ")
 print(peoplelist)
