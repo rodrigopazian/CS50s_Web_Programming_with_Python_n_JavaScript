@@ -3,13 +3,15 @@ from django.shortcuts import render
 
 # Create your views here.
 def index(request):
-    return HttpResponse("Hello!")
+    #return HttpResponse("Hello!")
+    return render(request, "hello/index.html")
 
 def rodrigo(request):
 	return HttpResponse("Hello, Rodrigo")
 
-def greet(request, name):
-    return HttpResponse(f"Hello, {name}!")
+# def greet(request, name):
+#     return HttpResponse(f"Hello, {name}!")
 
-def user(request, username):
-    return HttpResponse(f"Hello user, {username}!")
+#def user(request, username):
+#    return HttpResponse(f"Hello user, {username}!")
+
