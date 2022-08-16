@@ -1,13 +1,14 @@
-from socket import fromshare
 from django.shortcuts import render
 from django import forms
+from django.http import HttpResponseRedirect
+from django.urls import reverse
 
 #Global variables
-tasks = ["task1", "task2", "task3"]
+tasks = []
 
 class SubmmitNewTaskForm(forms.Form):
     task = forms.CharField(label="New Task")
-    priority = forms.IntegerField(label="Priority", max_value=5, min_value=1)
+    # priority = forms.IntegerField(label="Priority", max_value=5, min_value=1)
 
 # Create your views here.
 def index(request):
@@ -19,6 +20,8 @@ def addtask(request):
         if form.is_valid():
             task = form.cleaned_data["task"]
             tasks.append(task)
+            # return HttpResponseRedirect("/tasks")
+            return HttpResponseRedirect(reverse("tasks:index"))
         else:
             return render(request, "tasks/addtask.html", {"form": form})
     return render(request, "tasks/addtask.html", {"form": SubmmitNewTaskForm()})
