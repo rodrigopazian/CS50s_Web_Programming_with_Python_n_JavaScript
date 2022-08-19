@@ -1,13 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flights</title>
-</head>
-<body>
-    <h1>Flights</h1>
+{% extends "flights/layout.html" %}
+
+{% block body %}
+    <h1 style="text-align: center">Airline Flights</h1>
     
-</body>
-</html>
+        <ul>
+            {% for flight in flights %}
+                <li>{{ flight.id }}: {{ flight.origin }} to {{ flight.destination }} {{ flight.duration }} min</li>
+            {% endfor %}
+        </ul>    
+{% endblock %}
