@@ -5,7 +5,7 @@
     
         <ul>
             {% for flight in flights %}
-                <li>{{ flight.id }}: {{ flight.origin }} to {{ flight.destination }} {{ flight.duration }} min</li>
+                <li>{{ flight.id }}: {{ flight.origin }} to {{ flight.destination }} {{ flight.duration }} min <a href="{% url 'flights:flight' flight.id %}">AccessFlight</a></li>
             {% endfor %}
         </ul>    
 {% endblock %}
